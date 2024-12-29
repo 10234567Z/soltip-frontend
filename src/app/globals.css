@@ -1,0 +1,51 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  @apply bg-gray-100;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom styles for wallet adapter button */
+.wallet-adapter-button {
+  @apply bg-indigo-600 text-white font-semibold py-3 px-4 rounded-md text-base transition-all duration-200 !important;
+}
+
+.wallet-adapter-button:hover {
+  @apply bg-indigo-700 !important;
+}
+
+.wallet-adapter-button:not([disabled]):hover {
+  @apply bg-indigo-700 !important;
+}
+
+/* Custom input styles */
+input[type="text"],
+input[type="number"] {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  @apply ring-2 ring-indigo-500 border-indigo-500;
+}
+
+/* Custom button styles */
+button {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+button:hover {
+  @apply transform scale-105;
+}
+
+button:active {
+  @apply transform scale-95;
+}
+
