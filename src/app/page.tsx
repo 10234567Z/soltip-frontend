@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useConnection, useWallet } from '@solana/wallet-adapter-react'
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
-import { PublicKey, Transaction, SystemProgram } from '@solana/web3.js'
+import { PublicKey, SystemProgram } from '@solana/web3.js'
 import { Program, AnchorProvider, web3, BN } from '@project-serum/anchor'
 import { motion, AnimatePresence } from 'framer-motion'
 import { IDL } from '@/types/minter'
